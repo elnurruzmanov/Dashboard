@@ -1,0 +1,29 @@
+@import "../../assets/scss/color.scss";
+
+.sidebar{
+  height: 100vh;
+  background-color: $main-dark;
+  width:105px;    
+  border-radius: 0 16px 16px 0;
+  padding-left: 12px;
+
+  &_link{
+    background-color: $main-bg-color;
+    display: inline-block;
+    padding: 12px;
+    padding-right: 24px;
+  }
+  }
+
+  .logo{
+    padding: 24px;
+    padding-left: 12px;
+    display: inline-block;
+
+    &:hover{
+      opacity: 0.8;
+    }
+    &:active{
+      opacity: 0.6;
+    }
+  }

@@ -1,0 +1,41 @@
+@import "./assets/scss/normalize.scss";
+@import "./assets/scss/color.scss";
+@import "./assets/scss/color.scss";
+// Visually hidding code
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin:-1px;
+  border:0;
+  padding:0;
+  clip:rect(0 0 0 0);
+  overflow: hidden;
+}
+body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:"Barlow",   'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-color: $main-bg-color;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+html{
+  height: 100%;
+}
+
+
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
