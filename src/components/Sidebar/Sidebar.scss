@@ -1,29 +1,83 @@
 @import "../../assets/scss/color.scss";
 
-.sidebar{
+.sidebar {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: $main-dark;
-  width:105px;    
+  width: 91px;
   border-radius: 0 16px 16px 0;
   padding-left: 12px;
 
-  &_link{
+  &_list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &_link {
+    margin-bottom: 22px;
+    display: inline-block;
+    padding: 12px;
+    padding-right: 24px;
+    border-radius: 12px 0px 0px 12px;
+
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+    }
+    svg {
+      path {
+        fill: $main-orange;
+      }
+    }
+  }
+
+  &_link-active {
+    margin-bottom: 22px;
     background-color: $main-bg-color;
     display: inline-block;
     padding: 12px;
     padding-right: 24px;
-  }
-  }
+    border-radius: 12px 0px 0px 12px;
 
-  .logo{
-    padding: 24px;
-    padding-left: 12px;
-    display: inline-block;
 
-    &:hover{
-      opacity: 0.8;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background-color: $main-orange;
+      border-radius: 8px;
     }
-    &:active{
-      opacity: 0.6;
+    svg {
+      path {
+        fill: #fff;
+      }
     }
   }
+  &_btn {
+    margin-top: auto;
+    padding-left: 28px;
+    border: none;
+    background: none;
+  }
+}
+.logo {
+  padding: 24px;
+  padding-left: 12px;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
