@@ -8,13 +8,13 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to="/" className="logo">
-        <Logo />
+        <Logo /> 
       </Link>
       <ul className="sidebar_list">
         <li className="sidebar_item ">
           <NavLink to="/" className="sidebar_link sidebar_link-active" activeClassName="sidebar_link-active" exact>
             <span className="sidebar_link-item sidebar_link-active-item">
-              <Home />
+              <Home /> 
             </span>
           </NavLink>
         </li>
@@ -39,7 +39,7 @@ const Sidebar = () => {
             </span>
           </NavLink>
         </li>
-        <li className="sidebar_item ">
+        <li className="sidebar_item">
           <NavLink to="/notification" className="sidebar_link" activeClassName="sidebar_link-active">
             <span className="sidebar_link-item">
               <Home />
